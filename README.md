@@ -105,14 +105,6 @@ nltk.download("stopwords")
 4. Select the Python interpreter/kernel from this virtual environment.
 5. Run each notebook's cells from top to bottom.
 
-**Troubleshooting:** If spaCy reports `[E050] Can't find model 'en_core_web_sm'`, install the model using the same Python interpreter as your notebook:
-
-```python
-import sys
-print(sys.executable)
-```
-
-Then use that interpreter to run `-m spacy download en_core_web_sm` and restart the kernel.
 
 ## Key Concepts Learned
 
