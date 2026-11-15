@@ -43,9 +43,15 @@ Entity detection and labels may vary slightly by spaCy model version.
 
 This notebook implements the attention operation used in Transformer models:
 
-$$
-\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-$$
+### Attention Formula
+
+Attention(Q, K, V) = softmax((Q × Kᵀ) / √dₖ) × V
+
+Where:
+- **Q (Query):** Represents the information being searched for.
+- **K (Key):** Represents the information used to calculate attention scores.
+- **V (Value):** Contains the information used to generate the output.
+- **dₖ:** Dimension of the key vectors.
 
 It:
 1. Computes query–key similarity scores (`Q @ K.T`).
